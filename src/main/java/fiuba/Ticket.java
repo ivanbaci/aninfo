@@ -16,11 +16,12 @@ public class Ticket {
     }
 
 
-    public void tomar() {
+    public boolean tomar() {
         if (this.estado = "atendido") {
-            throw new TicketAtendidoException();
+            return false;
         }
         this.estado = "atendido";
+        return true;
     }
 
     public String consultarEstado() {
