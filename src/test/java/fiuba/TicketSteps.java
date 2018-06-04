@@ -16,12 +16,12 @@ public class TicketSteps {
 
     @Dado("^que hay un ticket \"(.*?)\"")
     public void que_hay_un_ticket(String estado) throws Throwable {
-        ticket = new Ticket();
+        ticket = new Ticket("Problema visión celular");
         ticket.modificarEstado(estado);
     }
 
-    @Cuando("^cuando lo tomo")
-    public void cuando_lo_tomo() throws Throwable {
+    @Cuando("^cuando lo quiero tomar")
+    public void cuando_lo_quiero_tomar() throws Throwable {
         resultadoExitoso = ticket.tomar();
     }
 

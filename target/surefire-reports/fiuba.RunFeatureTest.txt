@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: fiuba.RunFeatureTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.967 sec <<< FAILURE! - in fiuba.RunFeatureTest
+Entonces la operacion es rechazada y el ticket sigue como "atendido"(Escenario: Ticket atendido)  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
+	at fiuba.TicketSteps.la_operacion_es_rechazada_y_el_ticket_sigue_como(TicketSteps.java:36)
+	at ✽.Entonces la operacion es rechazada y el ticket sigue como "atendido"(ticket.feature:12)
+
+Escenario: Ticket atendido  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
+	at fiuba.TicketSteps.la_operacion_es_rechazada_y_el_ticket_sigue_como(TicketSteps.java:36)
+	at ✽.Entonces la operacion es rechazada y el ticket sigue como "atendido"(ticket.feature:12)
+

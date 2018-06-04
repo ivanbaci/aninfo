@@ -1,0 +1,135 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: es"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Ticket pendiente",
+        "description": "",
+        "id": "resolución-de-ticket;ticket-pendiente",
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 138813966,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "que hay un ticket \"pendiente\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pendiente",
+                  "offset": 19
+                }
+              ],
+              "location": "TicketSteps.que_hay_un_ticket(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 56883,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "cuando lo quiero tomar",
+            "match": {
+              "location": "TicketSteps.cuando_lo_quiero_tomar()"
+            },
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 1941320,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "el ticket figura como \"atendido\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "atendido",
+                  "offset": 23
+                }
+              ],
+              "location": "TicketSteps.el_ticket_figura_como(String)"
+            },
+            "keyword": "Entonces "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Ticket atendido",
+        "description": "",
+        "id": "resolución-de-ticket;ticket-atendido",
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 98799,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que hay un ticket \"atendido\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "atendido",
+                  "offset": 19
+                }
+              ],
+              "location": "TicketSteps.que_hay_un_ticket(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 30124,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "cuando lo quiero tomar",
+            "match": {
+              "location": "TicketSteps.cuando_lo_quiero_tomar()"
+            },
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 630388,
+              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertFalse(Assert.java:64)\n\tat org.junit.Assert.assertFalse(Assert.java:74)\n\tat fiuba.TicketSteps.la_operacion_es_rechazada_y_el_ticket_sigue_como(TicketSteps.java:36)\n\tat ✽.Entonces la operacion es rechazada y el ticket sigue como \"atendido\"(ticket.feature:12)\n",
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "la operacion es rechazada y el ticket sigue como \"atendido\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "atendido",
+                  "offset": 50
+                }
+              ],
+              "location": "TicketSteps.la_operacion_es_rechazada_y_el_ticket_sigue_como(String)"
+            },
+            "keyword": "Entonces "
+          }
+        ]
+      }
+    ],
+    "name": "Resolución de ticket",
+    "description": "",
+    "id": "resolución-de-ticket",
+    "keyword": "Característica",
+    "uri": "ticket.feature"
+  }
+]

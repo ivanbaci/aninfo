@@ -6,9 +6,11 @@ import java.util.List;
 public class Ticket {
 
     private String estado;
+    private String descripcion;
 
-    public Ticket() {
-        this.estado = "pendiente";        
+    public Ticket(String myDescripcion) {
+        this.estado = "pendiente";
+        this.descripcion = myDescripcion;         
     }
 
     public void modificarEstado(String nuevoEstado) {
@@ -17,7 +19,7 @@ public class Ticket {
 
 
     public boolean tomar() {
-        if (this.estado = "atendido") {
+        if (this.estado == "atendido") {
             return false;
         }
         this.estado = "atendido";
@@ -28,3 +30,4 @@ public class Ticket {
         return this.estado;
     }
 }
+
