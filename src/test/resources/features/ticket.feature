@@ -10,3 +10,8 @@ Característica: Resolución de ticket
     Dado que hay un ticket "atendido"
     Cuando cuando lo quiero tomar
     Entonces la operacion es rechazada y el ticket sigue como "atendido"
+
+  Escenario: Historial de tickets por cliente
+    Dado que hay tres ticket de "santander"
+    Cuando cuando busco el historial de tickets
+    Entonces figuran "3" tickets

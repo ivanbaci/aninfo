@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.141571">
-<testcase classname="Resolución de ticket" name="Ticket pendiente" time="0.140812">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.148379">
+<testcase classname="Resolución de ticket" name="Ticket pendiente" time="0.146931">
 <system-out><![CDATA[Dado que hay un ticket "pendiente"..........................................passed
 Cuando cuando lo quiero tomar...............................................passed
 Entonces el ticket figura como "atendido"...................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Resolución de ticket" name="Ticket atendido" time="0.000759">
-<failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:64)&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:74)&#10;&#9;at fiuba.TicketSteps.la_operacion_es_rechazada_y_el_ticket_sigue_como(TicketSteps.java:36)&#10;&#9;at ✽.Entonces la operacion es rechazada y el ticket sigue como &quot;atendido&quot;(ticket.feature:12)&#10;"><![CDATA[Dado que hay un ticket "atendido"...........................................passed
+<testcase classname="Resolución de ticket" name="Ticket atendido" time="0.000317">
+<system-out><![CDATA[Dado que hay un ticket "atendido"...........................................passed
 Cuando cuando lo quiero tomar...............................................passed
-Entonces la operacion es rechazada y el ticket sigue como "atendido"........failed
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertFalse(Assert.java:64)
-	at org.junit.Assert.assertFalse(Assert.java:74)
-	at fiuba.TicketSteps.la_operacion_es_rechazada_y_el_ticket_sigue_como(TicketSteps.java:36)
-	at ✽.Entonces la operacion es rechazada y el ticket sigue como "atendido"(ticket.feature:12)
-]]></failure>
+Entonces la operacion es rechazada y el ticket sigue como "atendido"........passed
+]]></system-out>
+</testcase>
+<testcase classname="Resolución de ticket" name="Historial de tickets por cliente" time="0.001131">
+<system-out><![CDATA[Dado que hay tres ticket de "santander".....................................passed
+Cuando cuando busco el historial de tickets.................................passed
+Entonces figuran "3" tickets................................................passed
+]]></system-out>
 </testcase>
 </testsuite>

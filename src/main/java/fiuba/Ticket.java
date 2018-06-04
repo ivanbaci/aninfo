@@ -19,7 +19,7 @@ public class Ticket {
 
 
     public boolean tomar() {
-        if (this.estado == "atendido") {
+        if (this.estado.equals("atendido")) {
             return false;
         }
         this.estado = "atendido";

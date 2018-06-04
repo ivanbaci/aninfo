@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="fiuba.RunFeatureTest" time="0.028" tests="8" errors="0" skipped="0" failures="2">
+<testsuite name="fiuba.RunFeatureTest" time="0.026" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -62,27 +62,13 @@
   <testcase name="Dado que hay un ticket &quot;pendiente&quot;" classname="Escenario: Ticket pendiente" time="0.002"/>
   <testcase name="Cuando cuando lo quiero tomar" classname="Escenario: Ticket pendiente" time="0.003"/>
   <testcase name="Entonces el ticket figura como &quot;atendido&quot;" classname="Escenario: Ticket pendiente" time="0"/>
-  <testcase name="Escenario: Ticket pendiente" classname="Escenario: Ticket pendiente" time="0.001"/>
-  <testcase name="Dado que hay un ticket &quot;atendido&quot;" classname="Escenario: Ticket atendido" time="0"/>
+  <testcase name="Escenario: Ticket pendiente" classname="Escenario: Ticket pendiente" time="0.008"/>
+  <testcase name="Dado que hay un ticket &quot;atendido&quot;" classname="Escenario: Ticket atendido" time="0.001"/>
   <testcase name="Cuando cuando lo quiero tomar" classname="Escenario: Ticket atendido" time="0"/>
-  <testcase name="Entonces la operacion es rechazada y el ticket sigue como &quot;atendido&quot;" classname="Escenario: Ticket atendido" time="0.011">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertFalse(Assert.java:64)
-	at org.junit.Assert.assertFalse(Assert.java:74)
-	at fiuba.TicketSteps.la_operacion_es_rechazada_y_el_ticket_sigue_como(TicketSteps.java:36)
-	at ✽.Entonces la operacion es rechazada y el ticket sigue como "atendido"(ticket.feature:12)
-</failure>
-  </testcase>
-  <testcase name="Escenario: Ticket atendido" classname="Escenario: Ticket atendido" time="0.011">
-    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertFalse(Assert.java:64)
-	at org.junit.Assert.assertFalse(Assert.java:74)
-	at fiuba.TicketSteps.la_operacion_es_rechazada_y_el_ticket_sigue_como(TicketSteps.java:36)
-	at ✽.Entonces la operacion es rechazada y el ticket sigue como "atendido"(ticket.feature:12)
-</failure>
-  </testcase>
+  <testcase name="Entonces la operacion es rechazada y el ticket sigue como &quot;atendido&quot;" classname="Escenario: Ticket atendido" time="0"/>
+  <testcase name="Escenario: Ticket atendido" classname="Escenario: Ticket atendido" time="0.01"/>
+  <testcase name="Dado que hay tres ticket de &quot;santander&quot;" classname="Escenario: Historial de tickets por cliente" time="0"/>
+  <testcase name="Cuando cuando busco el historial de tickets" classname="Escenario: Historial de tickets por cliente" time="0"/>
+  <testcase name="Entonces figuran &quot;3&quot; tickets" classname="Escenario: Historial de tickets por cliente" time="0"/>
+  <testcase name="Escenario: Historial de tickets por cliente" classname="Escenario: Historial de tickets por cliente" time="0.002"/>
 </testsuite>

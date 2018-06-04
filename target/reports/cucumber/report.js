@@ -45,14 +45,14 @@ formatter.match({
   "location": "TicketSteps.que_hay_un_ticket(String)"
 });
 formatter.result({
-  "duration": 138813966,
+  "duration": 143540383,
   "status": "passed"
 });
 formatter.match({
   "location": "TicketSteps.cuando_lo_quiero_tomar()"
 });
 formatter.result({
-  "duration": 56883,
+  "duration": 58498,
   "status": "passed"
 });
 formatter.match({
@@ -65,7 +65,7 @@ formatter.match({
   "location": "TicketSteps.el_ticket_figura_como(String)"
 });
 formatter.result({
-  "duration": 1941320,
+  "duration": 3331730,
   "status": "passed"
 });
 formatter.scenario({
@@ -101,14 +101,14 @@ formatter.match({
   "location": "TicketSteps.que_hay_un_ticket(String)"
 });
 formatter.result({
-  "duration": 98799,
+  "duration": 95250,
   "status": "passed"
 });
 formatter.match({
   "location": "TicketSteps.cuando_lo_quiero_tomar()"
 });
 formatter.result({
-  "duration": 30124,
+  "duration": 128542,
   "status": "passed"
 });
 formatter.match({
@@ -121,8 +121,63 @@ formatter.match({
   "location": "TicketSteps.la_operacion_es_rechazada_y_el_ticket_sigue_como(String)"
 });
 formatter.result({
-  "duration": 630388,
-  "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertFalse(Assert.java:64)\n\tat org.junit.Assert.assertFalse(Assert.java:74)\n\tat fiuba.TicketSteps.la_operacion_es_rechazada_y_el_ticket_sigue_como(TicketSteps.java:36)\n\tat ✽.Entonces la operacion es rechazada y el ticket sigue como \"atendido\"(ticket.feature:12)\n",
-  "status": "failed"
+  "duration": 93695,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 14,
+  "name": "Historial de tickets por cliente",
+  "description": "",
+  "id": "resolución-de-ticket;historial-de-tickets-por-cliente",
+  "type": "scenario",
+  "keyword": "Escenario"
+});
+formatter.step({
+  "line": 15,
+  "name": "que hay tres ticket de \"santander\"",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 16,
+  "name": "cuando busco el historial de tickets",
+  "keyword": "Cuando "
+});
+formatter.step({
+  "line": 17,
+  "name": "figuran \"3\" tickets",
+  "keyword": "Entonces "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "santander",
+      "offset": 24
+    }
+  ],
+  "location": "TicketSteps.que_hay_tres_ticket_de(String)"
+});
+formatter.result({
+  "duration": 162616,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TicketSteps.cuando_busco_el_historial_de_tickets()"
+});
+formatter.result({
+  "duration": 41945,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "3",
+      "offset": 9
+    }
+  ],
+  "location": "TicketSteps.el_ticket_figura_como(int)"
+});
+formatter.result({
+  "duration": 926624,
+  "status": "passed"
 });
 });

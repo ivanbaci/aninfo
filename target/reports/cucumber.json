@@ -18,7 +18,7 @@
         "steps": [
           {
             "result": {
-              "duration": 138813966,
+              "duration": 143540383,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 56883,
+              "duration": 58498,
               "status": "passed"
             },
             "line": 6,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 1941320,
+              "duration": 3331730,
               "status": "passed"
             },
             "line": 7,
@@ -76,7 +76,7 @@
         "steps": [
           {
             "result": {
-              "duration": 98799,
+              "duration": 95250,
               "status": "passed"
             },
             "line": 10,
@@ -94,7 +94,7 @@
           },
           {
             "result": {
-              "duration": 30124,
+              "duration": 128542,
               "status": "passed"
             },
             "line": 11,
@@ -106,9 +106,8 @@
           },
           {
             "result": {
-              "duration": 630388,
-              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertFalse(Assert.java:64)\n\tat org.junit.Assert.assertFalse(Assert.java:74)\n\tat fiuba.TicketSteps.la_operacion_es_rechazada_y_el_ticket_sigue_como(TicketSteps.java:36)\n\tat ✽.Entonces la operacion es rechazada y el ticket sigue como \"atendido\"(ticket.feature:12)\n",
-              "status": "failed"
+              "duration": 93695,
+              "status": "passed"
             },
             "line": 12,
             "name": "la operacion es rechazada y el ticket sigue como \"atendido\"",
@@ -120,6 +119,64 @@
                 }
               ],
               "location": "TicketSteps.la_operacion_es_rechazada_y_el_ticket_sigue_como(String)"
+            },
+            "keyword": "Entonces "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Historial de tickets por cliente",
+        "description": "",
+        "id": "resolución-de-ticket;historial-de-tickets-por-cliente",
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 162616,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "que hay tres ticket de \"santander\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "santander",
+                  "offset": 24
+                }
+              ],
+              "location": "TicketSteps.que_hay_tres_ticket_de(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 41945,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "cuando busco el historial de tickets",
+            "match": {
+              "location": "TicketSteps.cuando_busco_el_historial_de_tickets()"
+            },
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 926624,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "figuran \"3\" tickets",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 9
+                }
+              ],
+              "location": "TicketSteps.el_ticket_figura_como(int)"
             },
             "keyword": "Entonces "
           }

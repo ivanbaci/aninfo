@@ -6,8 +6,10 @@ import java.util.List;
 public class Cliente {
 
     List<Ticket> tickets;
+    private String nombre;
 
-    public Ticket() {
+    public Cliente(String myNombre) {
+        nombre = myNombre;
         this.tickets = new ArrayList<Ticket>();       
     }
 
