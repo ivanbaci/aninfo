@@ -22,9 +22,3 @@ public class Cliente {
         
 }
 
-private Ticket ticket;
-
-ticket = new Ticket();
-
-ticket.modificarEstado("atendido");
-
